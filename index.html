@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexDemo</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Flex 布局示例</h1>
+        <div class="thx">
+            <p>感谢阮一峰老师的教程http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html</p>
+            <p>本示例将教程上所有的布局都简单的实现了一遍，并保存GitHub上面</p>
+            <p>https://github.com/JailBreakC/flex-box-demo</p>
+        </div>
+    </header>
+    <section class="property">
+        <h2>
+            容器的属性
+        </h2>
+        <div>
+            <h3>
+                1. flex-direction 属性
+            </h3>
+            <div class="thx">
+                <p>flex-direction属性决定主轴的方向（即项目的排列方向）</p>
+            </div>
+            <div class="thx">
+                <p>.box { flex-direction:row | row-reverse | column | colum-reverse; }</p>
+            </div>
+            <div class="dir">
+                <div class="box"><h8>1</h8></div>
+                <div class="box"><h8>2</h8></div>
+                <div class="box"><h8>3</h8></div>
+                <div class="box"><h8>4</h8></div>        
+            </div>
+
+        </div>
+        <div>
+            <h3>
+                2. flex-wrap 属性
+            </h3>
+            <div class="thx">
+                <p>默认情况下，项目都排在一条线（又称“轴线”上。 flex-wrap 属性定义，如果一条轴线排不下，如何换行</p>
+            </div>
+            <div class="thx">
+                <p>.box{ flex-wrap:nowrap | wrap | wrap-reverse;} </p>
+             </div>
+             <div class="thx">
+               <p>nowarp(default): 不换行</p> 
+             </div>
+            <div class="wrap1">
+                <div class="box"><h8>1</h8></div>
+                <div class="box"><h8>2</h8></div>
+                <div class="box"><h8>3</h8></div>
+                <div class="box"><h8>4</h8></div>
+                <div class="box"><h8>5</h8></div>
+                <div class="box"><h8>6</h8></div>
+                <div class="box"><h8>7</h8></div>
+                <div class="box"><h8>8</h8></div>
+            </div>
+            <div class="thx">
+               <p>wrap: 换行，第一行在上方</p>
+            </div>
+            <div class="wrap2">
+                <div class="box"><h8>1</h8></div>
+                <div class="box"><h8>2</h8></div>
+                <div class="box"><h8>3</h8></div>
+                <div class="box"><h8>4</h8></div>
+                <div class="box"><h8>5</h8></div>
+                <div class="box"><h8>6</h8></div>
+                <div class="box"><h8>7</h8></div>
+                <div class="box"><h8>8</h8></div>
+            </div>
+            <div class="thx">
+                <p>wrap-reverse: 换行，第一行在下方</p>
+             </div>
+             <div class="wrap3">
+                 <div class="box"><h8>1</h8></div>
+                 <div class="box"><h8>2</h8></div>
+                 <div class="box"><h8>3</h8></div>
+                 <div class="box"><h8>4</h8></div>
+                 <div class="box"><h8>5</h8></div>
+                 <div class="box"><h8>6</h8></div>
+                 <div class="box"><h8>7</h8></div>
+                 <div class="box"><h8>8</h8></div>
+             </div>
+             <div>
+                <h3>
+                    3. flex-flow
+                </h3>
+                <div class="thx">
+                    <p>flex-flow 属性是 flex-direction 和 flex-wrap 的简写形式，默认值为 row nowarp</p>
+                </div>
+                <div class="thx">
+                  <p>.box { flex-flow:<flex-direction> || <flex-wrap>;}
+                  </p>
+                 </div>
+                <div class="wrap4">
+                    <div class="box"><h8>1</h8></div>
+                    <div class="box"><h8>2</h8></div>
+                    <div class="box"><h8>3</h8></div>
+                    <div class="box"><h8>4</h8></div>
+                    <div class="box"><h8>5</h8></div>
+                    <div class="box"><h8>6</h8></div>
+                    <div class="box"><h8>7</h8></div>
+                    <div class="box"><h8>8</h8></div>
+                </div>
+                <div>
+                    <h3>
+                        4. justify-content
+                    </h3>
+                    <div class="thx">
+                        <p>justify-content 属性定义了项目在主轴上的对齐方式</p>
+                    </div>
+                    <div class="thx">
+                      <p>.box { justify-content: flex-start | flex-end | center | space-between | space-around;}
+                      </p>
+                     </div>
+                     <div class="thx">
+                       <p>flex-start（默认值）：左对齐</p>
+                        </p>
+                       </div>
+                    <div class="wrap5">
+                        <div class="box"><h8>1</h8></div>
+                        <div class="box"><h8>2</h8></div>
+                        <div class="box"><h8>3</h8></div>
+                        <div class="box"><h8>4</h8></div>
+                        <div class="box"><h8>5</h8></div>
+                       
+                    </div>
+                    <div class="thx">
+                        <p>flex-end：右对齐</p>
+                         </p>
+                        </div>
+                     <div class="wrap6">
+                         <div class="box"><h8>1</h8></div>
+                         <div class="box"><h8>2</h8></div>
+                         <div class="box"><h8>3</h8></div>
+                         <div class="box"><h8>4</h8></div>
+                         <div class="box"><h8>5</h8></div>
+                     </div>
+
+                     <div class="thx">
+                        <p>center：居中</p>
+                         </p>
+                        </div>
+                     <div class="wrap7">
+                         <div class="box"><h8>1</h8></div>
+                         <div class="box"><h8>2</h8></div>
+                         <div class="box"><h8>3</h8></div>
+                         <div class="box"><h8>4</h8></div>
+                         <div class="box"><h8>5</h8></div>
+                     </div>
+                     <div class="thx">
+                        <p>space-between：两端对齐，项目之间的间隔都相等</p>
+                         </p>
+                        </div>
+                     <div class="wrap8">
+                         <div class="box"><h8>1</h8></div>
+                         <div class="box"><h8>2</h8></div>
+                         <div class="box"><h8>3</h8></div>
+                         <div class="box"><h8>4</h8></div>
+                         <div class="box"><h8>5</h8></div>
+                        </div>
+                         <div class="thx">
+                            <p>space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍</p>
+                             </p>
+                            </div>
+                         <div class="wrap9">
+                             <div class="box"><h8>1</h8></div>
+                             <div class="box"><h8>2</h8></div>
+                             <div class="box"><h8>3</h8></div>
+                             <div class="box"><h8>4</h8></div>
+                             <div class="box"><h8>5</h8></div>
+                     </div>
+                     <div>
+                        <h3>
+                            5. align-items
+                        </h3>
+                        <div class="thx">
+                            <p>align-items 属性定义项目在交叉轴上如何对齐</p>
+                        </div>
+                        <div class="thx">
+                          <p>.box { align-items: flex-start | flex-end | center | baseline | stretch;}
+                          </p>
+                         </div>
+                         <div class="thx">
+                           <p>flex-start: 交叉轴的起点对齐</p>
+                            </p>
+                           </div>
+                        <div class="wrap10">
+                            <div class="box"><h8>1</h8></div>
+                            <div class="boxtall"><h8>2</h8></div>
+                            <div class="box"><h8>3</h8></div>
+                            <div class="boxtall"><h8>4</h8></div>
+                          
+                        </div>
+                        <div class="thx">
+                            <p>flex-end: 交叉轴的终点对齐</p>
+                             </p>
+                            </div>
+                             <div class="wrap11">
+                             <div class="box"><h8>1</h8></div>
+                             <div class="boxtall"><h8>2</h8></div>
+                             <div class="box"><h8>3</h8></div>
+                             <div class="boxtall"><h8>4</h8></div>
+                         </div>
+                         <div class="thx">
+                            <p>center: 交叉轴的中点对齐</p>
+                             </p>
+                            </div>
+                             <div class="wrap12">
+                             <div class="box"><h8>1</h8></div>
+                             <div class="boxtall"><h8>2</h8></div>
+                             <div class="box"><h8>3</h8></div>
+                             <div class="boxtall"><h8>4</h8></div>
+                         </div>
+
+                         <div class="thx">
+                            <p>baseline: 项目的第一行文字的基线对齐</p>
+                             </p>
+                            </div>
+                             <div class="wrap13">
+                             <div class="box1"><h8>1</h8></div>
+                             <div class="boxtall"><h8>2</h8></div>
+                             <div class="box"><h8>3</h8></div>
+                             <div class="boxtall"><h8>4</h8></div>
+                         </div>
+                         <div class="thx">
+                            <p>streth（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度</p>
+                             </p>
+                            </div>
+                             <div class="wrap14">
+                             <div class="box"><h8>1</h8></div>
+                             <div class="box"><h8>2</h8></div>
+                             <div class="box"><h8>3</h8></div>
+                             <div class="box"><h8>4</h8></div>
+                         </div>
+                         <div>
+                            <h3>
+                                6. align-content
+                            </h3>
+                            <div class="thx">
+                                <p>align-content属性定义了多根轴线（多行）的对齐方式。如果项目只有一根轴线，该属性不起作用</p>
+                            </div>
+                            <div class="thx">
+                              <p>.box { align-content: flex-start | flex-end | center | space-between | space-around | stretch; }
+                              </p>
+                             </div>
+                             <div class="thx">
+                               <p>flex-end：交叉轴的起点对齐</p>
+                                </p>
+                               </div>
+                            <div class="wrap15">
+                                <div class="box"><h8>1</h8></div>
+                                <div class="box"><h8>2</h8></div>
+                                <div class="box"><h8>3</h8></div>
+                                <div class="box"><h8>4</h8></div>
+                                <div class="box"><h8>5</h8></div>
+                                <div class="box"><h8>6</h8></div>
+                                <div class="box"><h8>7</h8></div>
+                                <div class="box"><h8>8</h8></div>
+                                <div class="box"><h8>9</h8></div>
+                               </div>
+                               <div class="thx">
+                                <p>flex-start：交叉轴的终点对齐</p>
+                                 </p>
+                                </div>
+                             <div class="wrap16">
+                                 <div class="box"><h8>1</h8></div>
+                                 <div class="box"><h8>2</h8></div>
+                                 <div class="box"><h8>3</h8></div>
+                                 <div class="box"><h8>4</h8></div>
+                                 <div class="box"><h8>5</h8></div>
+                                 <div class="box"><h8>6</h8></div>
+                                 <div class="box"><h8>7</h8></div>
+                                 <div class="box"><h8>8</h8></div>
+                                 <div class="box"><h8>9</h8></div>
+                                </div>
+                            </div>
+         </div>
+    </section>
+</body>
+</html>
